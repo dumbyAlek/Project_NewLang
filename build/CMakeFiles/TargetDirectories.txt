@@ -1,0 +1,3 @@
+/home/alek/CSE425/Project_NewLang/build/CMakeFiles/msk2.dir
+/home/alek/CSE425/Project_NewLang/build/CMakeFiles/edit_cache.dir
+/home/alek/CSE425/Project_NewLang/build/CMakeFiles/rebuild_cache.dir
