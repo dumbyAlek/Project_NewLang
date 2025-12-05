@@ -1,1 +1,1 @@
-# My New Project
+# Modular Syntax Kaleidoscope 2 (MSK2)
