@@ -27,7 +27,7 @@ llvm::Function *FunctionAST::codegen() {
   Builder->SetInsertPoint(BB);
   NamedValues.clear();
   for (auto &Arg : TheFunction->args()) {
-    NamedValues[Arg.getName().data()] = &Arg;
+    NamedValues[std::string(Arg.getName())] = &Arg;
   }
 
   if (llvm::Value *RetVal = Body->codegen()) {

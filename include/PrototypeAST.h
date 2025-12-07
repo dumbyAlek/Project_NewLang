@@ -12,7 +12,7 @@ using namespace std;
 // Represents the "prototype" for a function,
 // which captures its name, and its argument names
 class PrototypeAST {
-  const string Name;
+  string Name;
   vector<string> Args;
 
 public:
@@ -21,7 +21,9 @@ public:
 
   
   const string &getName() const { return Name; }
-  // void setName(const std::string &N) { Name = N; }
+  void setName(const std::string &NewName) { 
+        Name = NewName; 
+  }
   
    llvm::Function *codegen();
 };

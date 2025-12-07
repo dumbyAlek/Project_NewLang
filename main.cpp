@@ -108,6 +108,7 @@ static void HandleTopLevelExpression() {
         // Generate a unique name for this top-level expression
         static int anonCount = 0;
         std::string anonName = "__anon_expr" + std::to_string(anonCount++);
+        FnAST->getProto()->setName(anonName);
 
         if (FnAST->codegen()) {
             auto TSM = ThreadSafeModule(std::move(TheModule), std::move(TheContext));
